@@ -7,4 +7,8 @@ describe('removeAllVowels Filter', function () {
 		$filter = $injector.get('$filter');
 	}));
 
+	it('Removes all the vowels', function(){
+		expect($filter('removeAllVowels')("motorbike")).toBe("mtrbk")
+	})
+
 });
